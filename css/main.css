@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 100px 0;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+}
+.cat-img {
+  width: 100%;
+}
+
+.personality {
+  position: absolute;
+  top: calc(100% * 300 / 900);
+  left: 30px;
+  width: calc(100% * 200 / 1200);
+  min-width: 200px;
+}
+
+.weight {
+  position: absolute;
+  top: calc(100% * 210 /1200);
+  right: calc(100% * 300 / 1200);
+  width: 140px
+}
+
+.weight .line {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 1px;
+  height: calc(100vw * 160 / 1200);
+  min-height: 160px;
+  background-color: #333;
+}
+
+.features {
+  position: absolute;
+  bottom: 0;
+  right: calc(100% * 300 / 1200);
+  width: calc(100% * 400 / 1200);
+}
+
+.features .line {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 1px;
+  height: calc(100vw * 120 / 1200);
+  min-height: 120px;
+  background-color: #333;
+  transform: translateY(calc(100vw * 120 / 1200 * -1));
+}
+
+.head {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) {
+  .features .line {
+    transform: translateY(-120px);
+  }
+}
